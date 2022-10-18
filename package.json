@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "node-fetch": "^3.2.10"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node serverjs",
+    "dev": "nodemon server.js"
+  },
+  "name": "movie-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorApaez/movie-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorApaez/movie-api/issues"
+  },
+  "homepage": "https://github.com/VictorApaez/movie-api#readme",
+  "description": ""
+}
