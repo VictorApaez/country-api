@@ -7,7 +7,7 @@ let countrySchema = new Schema({
   },
   capital: [String],
   region: String,
-  languages: [String],
+  languages: Object,
   maps: {
     googleMaps: String,
     openStreetMaps: String,
