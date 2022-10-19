@@ -2,9 +2,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 let countrySchema = new Schema({
-  name: {
-    common: String,
-  },
+  name: String,
   capital: [String],
   region: String,
   languages: Object,
