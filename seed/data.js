@@ -18,7 +18,7 @@ function trimData(api) {
     let { name, capital, languages, maps, population, continents, flags } =
       country;
     return {
-      name,
+      name: name.common,
       capital,
       languages,
       maps,
