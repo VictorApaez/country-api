@@ -20,3 +20,14 @@ export const getCountry = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const getContinent = async (req, res) => {
+  try {
+    let continent = req.params.continent;
+    let result = await Country.find({ continents: continent });
+    res.json(result);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+};

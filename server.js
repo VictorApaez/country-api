@@ -6,11 +6,11 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-
 app.use("/", routes);
+app.use(express.static("home-page"));
 
 db.on("connected", () => {
-  console.clear();
+  // console.clear();
   console.log("Connected to MongoDB!");
   app.listen(PORT, () => {
     console.log(
