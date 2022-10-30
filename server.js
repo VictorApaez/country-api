@@ -12,9 +12,8 @@ app.use(express.static("home-page"));
 db.on("connected", () => {
   // console.clear();
   console.log("Connected to MongoDB!");
-  app.listen(PORT, () => {
-    console.log(
-      `Express server running in development on http://localhost:${PORT}`
-    );
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Express server running in development on port ${PORT}`);
   });
 });

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.6.5",
     "node-fetch": "^3.2.10"
@@ -12,7 +13,6 @@
   "name": "movie-api",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VictorApaez/movie-api.git"
