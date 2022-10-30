@@ -46,23 +46,62 @@
 
     <!-- ============= DOCS ================ -->
     <section id="docs">
-      <div class="countries code">
-        <h2>Request all countries</h2>
-        <p>The following code will return every country.</p>
-        <pre><code>http://localhost:3000/countries</code></pre>
-      </div>
+      <div class="request-examples">
+        <div class="countries code">
+          <h2>Request all countries</h2>
+          <p>The following code will return every country.</p>
+          <pre><code>https://country-api-production.up.railway.app/countries</code></pre>
+        </div>
 
-      <div class="country code">
-        <h2>Request by country</h2>
-        <p>The following code will return the country Mexico.</p>
-        <pre><code>http://localhost:3000/countries/name/Mexico</code></pre>
-      </div>
+        <div class="country code">
+          <h2>Request by country</h2>
+          <ul>
+            <li>Country name has to be uppercase.</li>
+            <li>For countries with spaces use <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/percent-encoding">Percent Encoding</a> (ex.
+              United%20States)</li>
+          </ul>
+          <p>The following code will return the country Mexico.</p>
+          <pre><code>https://country-api-production.up.railway.app/countries/name/Mexico</code></pre>
+          <p>Expected return:</p>
+          <pre><code>
+          [
+            {
+              "maps": {
+              "googleMaps": "https://goo.gl/maps/s5g7imNPMDEePxzbA",
+              "openStreetMaps": "https://www.openstreetmap.org/relation/114686"
+              },
+              "flags": {
+              "png": "https://flagcdn.com/w320/mx.png",
+              "svg": "https://flagcdn.com/mx.svg"
+              },
+              "_id": "635eb851e89bde7c416ed598",
+              "name": "Mexico",
+              "capital": [
+              "Mexico City"
+              ],
+              "languages": {
+              "spa": "Spanish"
+              },
+              "population": 128932753,
+              "continents": [
+              "North America"
+              ],
+              "__v": 0
+            }
+          ]
+        </code></pre>
+        </div>
 
-      <div class="continent code">
-        <h2>Request by continent</h2>
-        <p>The following code will return any country in Asia.</p>
-        <pre><code>http://localhost:3000/countries/continent/Asia</code></pre>
+        <div class="continent code">
+          <h2>Request by continent</h2>
+          <ul>
+            <li>Continent name has to be uppercase.</li>
+          </ul>
+          <p>The following code will return any country in Asia.</p>
+          <pre><code>https://country-api-production.up.railway.app/countries/continent/Asia</code></pre>
 
+        </div>
       </div>
     </section>
     <footer style="height: 100px; background-color: black;">hello</footer>
