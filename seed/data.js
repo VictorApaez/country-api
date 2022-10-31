@@ -15,8 +15,16 @@ fetchMovies();
 
 function trimData(api) {
   return api.map((country) => {
-    let { name, capital, languages, maps, population, continents, flags } =
-      country;
+    let {
+      name,
+      capital,
+      languages,
+      maps,
+      population,
+      continents,
+      flags,
+      latlng,
+    } = country;
     return {
       name: name.common,
       capital,
@@ -25,6 +33,7 @@ function trimData(api) {
       population,
       continents,
       flags,
+      latlng,
     };
   });
 }
