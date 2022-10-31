@@ -1,13 +1,14 @@
 # Countries API
 
 Welcome to version 1.0 of The Country API. Below you will find all available methods to our Country API.
+## live demo: https://country-api-production.up.railway.app/
 
 ### Access all Countries
 
 The following will access [all countries](https://simple.wikipedia.org/wiki/List_of_countries)
 
 ```
-http://localhost:3000/countries
+https://country-api-production.up.railway.app/countries
 ```
 
 ---
@@ -25,7 +26,7 @@ The following will access the country Mexico.
   [Percent Encoding](https://developer.mozilla.org/en-US/docs/Glossary/percent-encoding) (ex. United%20States.)
 
 ```
-http://localhost:3000/countries/name/Mexico
+https://country-api-production.up.railway.app/countries/name/Mexico
 ```
 
 ---
@@ -35,7 +36,7 @@ http://localhost:3000/countries/name/Mexico
 The following code will return any country in the [continent](https://en.wikipedia.org/wiki/Continent) Asia.
 
 ```
-http://localhost:3000/countries/continent/Asia
+https://country-api-production.up.railway.app/countries/continent/Asia
 ```
 
 ---
