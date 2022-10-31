@@ -43,6 +43,7 @@ async function seedData(api) {
     await Country.deleteMany({});
     await Country.create(api);
     await db.close();
+    console.log("seeded data");
   } catch (error) {
     console.log("Data.js Error: " + error);
   }
