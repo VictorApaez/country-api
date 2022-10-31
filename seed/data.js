@@ -33,7 +33,6 @@ function trimData(api) {
       population,
       continents,
       flags,
-      latlng,
     };
   });
 }

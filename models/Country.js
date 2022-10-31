@@ -16,7 +16,6 @@ let countrySchema = new Schema({
     png: String,
     svg: String,
   },
-  latlng: [Number],
 });
 
 export default mongoose.model("Country", countrySchema);
